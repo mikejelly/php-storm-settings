@@ -1,0 +1,13 @@
+<application>
+  <component name="FileTypeManager" version="17">
+    <extensionMap>
+      <mapping ext="ctp" type="PHP" />
+      <mapping pattern=".env.testing" type="PLAIN_TEXT" />
+      <mapping pattern=".env___jb_old___" type="PLAIN_TEXT" />
+      <mapping pattern="endpoints" type="PLAIN_TEXT" />
+      <mapping pattern="makedefault" type="PLAIN_TEXT" />
+      <mapping ext="mo" type="PLAIN_TEXT" />
+      <mapping ext="sample" type="PLAIN_TEXT" />
+    </extensionMap>
+  </component>
+</application>

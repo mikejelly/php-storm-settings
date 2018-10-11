@@ -1,0 +1,38 @@
+<templateSet group="user">
+  <template name="info" value="info('=================================================================');&#10;info('');&#10;info('=================================================================');" description="Debug for laravel" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="ca" value="createActive($END$, ['vendor_id' =&gt; $this-&gt;vendor]);" description="Create an active model for testing" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP Expression" value="true" />
+    </context>
+  </template>
+  <template name="#" value="#$SELECTION$" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="CSS" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="HTML" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="JSON" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="PHP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="Twig" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="Vue" value="false" />
+      <option name="XML" value="false" />
+    </context>
+  </template>
+  <template name="fa" value="factory($MODEL$)-&gt;states('$STATES$')-&gt;create(['vendor_id' =&gt; $vendor]);" description="Factory" toReformat="false" toShortenFQNames="true">
+    <variable name="MODEL" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="STATES" expression="enum(&quot;active&quot;, &quot;inactive&quot;, &quot;confirmed&quot;)" defaultValue="&quot;active&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>
