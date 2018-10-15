@@ -10,6 +10,12 @@
     <keyboard-shortcut first-keystroke="meta left" />
   </action>
   <action id="Exit" />
+  <action id="Macro.Arrow">
+    <keyboard-shortcut first-keystroke="ctrl minus" />
+  </action>
+  <action id="Macro.Fat Arrow">
+    <keyboard-shortcut first-keystroke="ctrl equals" />
+  </action>
   <action id="QuickJavaDoc">
     <keyboard-shortcut first-keystroke="f1" />
     <keyboard-shortcut first-keystroke="ctrl j" />
