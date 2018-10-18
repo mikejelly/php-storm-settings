@@ -54,6 +54,9 @@
     <mouse-shortcut keystroke="control button2" />
     <keyboard-shortcut first-keystroke="meta q" />
   </action>
+  <action id="StringManipulation.Sort">
+    <keyboard-shortcut first-keystroke="alt s" />
+  </action>
   <action id="UML.ZoomIn">
     <keyboard-shortcut first-keystroke="meta add" />
   </action>
