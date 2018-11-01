@@ -5,7 +5,8 @@
       <option name="PHP Statement" value="true" />
     </context>
   </template>
-  <template name="ca" value="createActive($END$, ['vendor_id' =&gt; $this-&gt;vendor]);" description="Create an active model for testing" toReformat="true" toShortenFQNames="true">
+  <template name="ca" value="createActive($END$, ['vendor_id' =&gt; $VENDOR$]);" description="Create an active model for testing" toReformat="true" toShortenFQNames="true">
+    <variable name="VENDOR" expression="enum(&quot;$this-&gt;vendor&quot;, &quot;$vendor&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP Expression" value="true" />
     </context>
@@ -31,6 +32,12 @@
   <template name="fa" value="factory($MODEL$)-&gt;states('$STATES$')-&gt;create(['vendor_id' =&gt; $vendor]);" description="Factory" toReformat="false" toShortenFQNames="true">
     <variable name="MODEL" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
     <variable name="STATES" expression="enum(&quot;active&quot;, &quot;inactive&quot;, &quot;confirmed&quot;)" defaultValue="&quot;active&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="cav" value="$VARNAME$ = createActive(Vendor::class);" description="Create active Vendor" toReformat="false" toShortenFQNames="true">
+    <variable name="VARNAME" expression="enum(&quot;$vendor&quot;, &quot;$this-&gt;vendor&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
     </context>
