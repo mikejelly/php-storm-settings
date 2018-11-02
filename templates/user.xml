@@ -50,7 +50,7 @@
   </template>
   <template name="cg" value="create($END$, ['$PARENTCLASS$_id' =&gt; $PARENT$]);" description="Create a generic model for testing" toReformat="true" toShortenFQNames="true">
     <variable name="PARENTCLASS" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="PARENT" expression="enum(concat(&quot;$&quot;, PARENTCLASS), concat(&quot;$this-&gt;&quot;, PARENTCLASS))" defaultValue="" alwaysStopAt="false" />
+    <variable name="PARENT" expression="enum(concat(&quot;$&quot;, camelCase(PARENTCLASS)), concat(&quot;$this-&gt;&quot;, camelCase(PARENTCLASS)))" defaultValue="" alwaysStopAt="false" />
     <context>
       <option name="PHP Expression" value="true" />
     </context>
