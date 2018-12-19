@@ -2,11 +2,11 @@
   <component name="FileTypeManager" version="17">
     <extensionMap>
       <mapping ext="blad" type="Blade" />
-      <mapping pattern="Kernel" type="PHP" />
       <removed_mapping ext="hphp" approved="true" type="PHP" />
-      <mapping pattern="Kernel.php" type="PLAIN_TEXT" />
       <mapping ext="blade" type="PLAIN_TEXT" />
+      <removed_mapping pattern="Kernel" approved="true" type="PHP" />
       <removed_mapping ext="hphp" approved="true" type="PHP" />
+      <removed_mapping pattern="Kernel.php" approved="true" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
 </application>
