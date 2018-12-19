@@ -3,8 +3,10 @@
     <extensionMap>
       <mapping ext="blad" type="Blade" />
       <mapping pattern="Kernel" type="PHP" />
+      <removed_mapping ext="hphp" approved="true" type="PHP" />
       <mapping pattern="Kernel.php" type="PLAIN_TEXT" />
       <mapping ext="blade" type="PLAIN_TEXT" />
+      <removed_mapping ext="hphp" approved="true" type="PHP" />
     </extensionMap>
   </component>
 </application>
