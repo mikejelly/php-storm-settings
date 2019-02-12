@@ -14,9 +14,9 @@
     <mask>*.js,*.hbs,*.htm</mask>
     <mask>*.php</mask>
     <mask>*.js,*.hbs</mask>
-    <mask>*.js</mask>
     <mask>*.jsx</mask>
     <mask>*.blade.php</mask>
     <mask>*.scss</mask>
+    <mask>*.js</mask>
   </component>
 </application>
