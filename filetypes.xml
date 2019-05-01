@@ -1,6 +1,7 @@
 <application>
   <component name="FileTypeManager" version="17">
     <extensionMap>
+      <mapping ext="py" type=".env file" />
       <mapping ext="blad" type="Blade" />
       <removed_mapping ext="hphp" approved="true" type="PHP" />
       <mapping ext="blade" type="PLAIN_TEXT" />
