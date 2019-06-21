@@ -4,6 +4,7 @@
       <mapping ext="py" type=".env file" />
       <mapping ext="blad" type="Blade" />
       <removed_mapping ext="hphp" approved="true" type="PHP" />
+      <mapping pattern="deploy" type="PLAIN_TEXT" />
       <mapping ext="blade" type="PLAIN_TEXT" />
       <removed_mapping pattern="Kernel" approved="true" type="PHP" />
       <removed_mapping ext="hphp" approved="true" type="PHP" />
