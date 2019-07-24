@@ -79,5 +79,7 @@
   <action id="UML.ZoomOut">
     <keyboard-shortcut first-keystroke="meta subtract" />
   </action>
-  <action id="ViewSource" />
+  <action id="ViewSource">
+    <keyboard-shortcut first-keystroke="ctrl meta enter" />
+  </action>
 </keymap>
