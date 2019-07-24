@@ -15,10 +15,14 @@
   <action id="CollapseRegion">
     <keyboard-shortcut first-keystroke="meta subtract" />
   </action>
+  <action id="Console.Execute.Multiline" />
+  <action id="Console.Jdbc.Execute" />
+  <action id="DirDiffMenu.SynchronizeDiff.All" />
   <action id="EditorLineStart">
     <keyboard-shortcut first-keystroke="home" />
     <keyboard-shortcut first-keystroke="meta left" />
   </action>
+  <action id="EditorSplitLine" />
   <action id="Exit" />
   <action id="ExpandAll">
     <keyboard-shortcut first-keystroke="meta add" />
@@ -62,6 +66,10 @@
     <mouse-shortcut keystroke="control button2" />
     <keyboard-shortcut first-keystroke="meta q" />
   </action>
+  <action id="ShowUsages">
+    <keyboard-shortcut first-keystroke="meta alt f7" />
+    <keyboard-shortcut first-keystroke="meta enter" />
+  </action>
   <action id="StringManipulation.Sort">
     <keyboard-shortcut first-keystroke="alt s" />
   </action>
@@ -71,4 +79,5 @@
   <action id="UML.ZoomOut">
     <keyboard-shortcut first-keystroke="meta subtract" />
   </action>
+  <action id="ViewSource" />
 </keymap>
