@@ -6,6 +6,7 @@
       <removed_mapping ext="hphp" approved="true" type="PHP" />
       <mapping pattern="deploy" type="PLAIN_TEXT" />
       <mapping ext="blade" type="PLAIN_TEXT" />
+      <mapping ext="sqlite" type="PLAIN_TEXT" />
       <removed_mapping pattern="Kernel" approved="true" type="PHP" />
       <removed_mapping ext="hphp" approved="true" type="PHP" />
       <removed_mapping pattern="Kernel.php" approved="true" type="PLAIN_TEXT" />
