@@ -50,7 +50,6 @@
   </action>
   <action id="Macro.Fat Arrow">
     <keyboard-shortcut first-keystroke="ctrl equals" />
-    <keyboard-shortcut first-keystroke="meta equals" />
   </action>
   <action id="MethodDown">
     <keyboard-shortcut first-keystroke="ctrl down" />
