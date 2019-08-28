@@ -55,13 +55,45 @@
       <option name="PHP Expression" value="true" />
     </context>
   </template>
-  <template name="cga" value="$VAR$ = create($CLASS$, ['$PARENTCLASS$_id' =&gt; $PARENT$]);" description="Create a generic model for testing assigned to a variable" toReformat="true" toShortenFQNames="true">
+  <template name="cga" value="$$$VAR$ = create($CLASS$, ['$PARENTCLASS$_id' =&gt; $PARENT$]);" description="Create a generic model for testing assigned to a variable" toReformat="true" toShortenFQNames="true">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="CLASS" expression="concat(capitalize(firstWord(VAR)), &quot;::class&quot;)" defaultValue="VAR" alwaysStopAt="true" />
     <variable name="PARENTCLASS" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="PARENT" expression="enum(concat(&quot;$&quot;, PARENTCLASS), concat(&quot;$this-&gt;&quot;, PARENTCLASS))" defaultValue="" alwaysStopAt="false" />
     <context>
       <option name="PHP Expression" value="true" />
+    </context>
+  </template>
+  <template name="cur" value="$$$VAR$ = createActive(User::class, ['vendor_id' =&gt; $VENDOR$, 'role_id' =&gt; User::$ROLE$]);" description="Create a user with a role" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VENDOR" expression="enum(&quot;$this-&gt;vendor&quot;, &quot;$vendor&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="ROLE" expression="enum(concat(&quot;ROLE_&quot;, firstWord(capitalizeAndUnderscore(VAR))), &quot;ROLE_ADMIN&quot;, &quot;ROLE_MANAGER&quot;, &quot;ROLE_STAFF&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="caa" value="$$$VAR$ = createActive($CLASS$, ['vendor_id' =&gt; $VENDOR$]);" description="Create an active model for testing assigned to a variable" toReformat="true" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CLASS" expression="concat(capitalize(firstWord(VAR)), &quot;::class&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="VENDOR" expression="enum(&quot;$this-&gt;vendor&quot;, &quot;$vendor&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP Expression" value="true" />
+    </context>
+  </template>
+  <template name="cat" value="createActive(Attendee::class, ['appointment_id' =&gt; $APPOINTMENT$, 'client_id' =&gt; $CLIENT$]);" description="Create attendee" toReformat="false" toShortenFQNames="true">
+    <variable name="APPOINTMENT" expression="phpSuggestVariableName()" defaultValue="&quot;$appointment&quot;" alwaysStopAt="false" />
+    <variable name="CLIENT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="cap" value="$$appointment = createActive(Appointment::class, [&#10;'vendor_id' =&gt; $VENDOR$,&#10;'service_id' =&gt; $SERVICE$,&#10;'location_id' =&gt; $LOCATION$,&#10;'staff_id' =&gt; $USER$,&#10;]);" description="Create Appointment" toReformat="true" toShortenFQNames="true">
+    <variable name="VENDOR" expression="enum(&quot;$vendor&quot;, &quot;$this-&gt;vendor&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="SERVICE" expression="enum(&quot;$service&quot;, &quot;$this-&gt;service&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="LOCATION" expression="enum(&quot;$location&quot;, &quot;$this-&gt;location&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="USER" expression="enum(&quot;$user&quot;, &quot;$this-&gt;user&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
     </context>
   </template>
 </templateSet>
