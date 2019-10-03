@@ -80,7 +80,7 @@
       <option name="PHP Expression" value="true" />
     </context>
   </template>
-  <template name="cat" value="createActive(Attendee::class, ['appointment_id' =&gt; $APPOINTMENT$, 'client_id' =&gt; $CLIENT$]);" description="Create attendee" toReformat="false" toShortenFQNames="true">
+  <template name="cat" value="create(Attendee::class, ['appointment_id' =&gt; $APPOINTMENT$, 'client_id' =&gt; $CLIENT$]);" description="Create attendee" toReformat="false" toShortenFQNames="true">
     <variable name="APPOINTMENT" expression="phpSuggestVariableName()" defaultValue="&quot;$appointment&quot;" alwaysStopAt="false" />
     <variable name="CLIENT" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
