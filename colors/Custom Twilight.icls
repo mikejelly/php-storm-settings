@@ -3,7 +3,7 @@
     <property name="created">2018-10-24T16:37:39</property>
     <property name="ide">PhpStorm</property>
     <property name="ideVersion">2018.2.5.0.0</property>
-    <property name="modified">2018-10-24T16:38:34</property>
+    <property name="modified">2019-11-25T13:39:00</property>
     <property name="originalScheme">_@user_Twilight</property>
   </metaInfo>
   <colors>
@@ -916,6 +916,11 @@
     <option name="JAVA_VALID_STRING_ESCAPE">
       <value>
         <option name="FOREGROUND" value="cf6a4c" />
+      </value>
+    </option>
+    <option name="JS.GLOBAL_FUNCTION">
+      <value>
+        <option name="FOREGROUND" value="ff6a2d" />
       </value>
     </option>
     <option name="JS.GLOBAL_VARIABLE">
