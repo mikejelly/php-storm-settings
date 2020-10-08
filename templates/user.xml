@@ -96,9 +96,18 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="mt" value="$$$VAR$ = microtime(true);&#10;dump((int) ((microtime(true) - $$$TIME$) * 1000) . 'ms');" description="Time Profile" toReformat="false" toShortenFQNames="true">
+  <template name="mtb" value="$$$VAR$ = microtime(true);&#10;dump((int) ((microtime(true) - $$$TIME$) * 1000) . 'ms');" description="Time Profile Before" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="TIME" expression="VAR" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="mta" value="$$$VAR$ = microtime(true);&#10;dump('$NAME$: ' . (int) (($$$TIME$ - $PREV$) * 1000) . 'ms');" description="Time Profile After" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="VAR" defaultValue="" alwaysStopAt="true" />
+    <variable name="TIME" expression="VAR" defaultValue="" alwaysStopAt="true" />
+    <variable name="PREV" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
     </context>
