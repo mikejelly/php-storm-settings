@@ -19,7 +19,7 @@
     <mask>*.js,*.blade.php,*.htm</mask>
     <mask>*.js,*.blade.php</mask>
     <mask>*.php</mask>
-    <mask>*.js</mask>
     <mask>*.jsx</mask>
+    <mask>*.js</mask>
   </component>
 </application>
