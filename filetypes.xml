@@ -1,6 +1,7 @@
 <application>
   <component name="FileTypeManager" version="18">
     <extensionMap>
+      <mapping ext="py" type=".env file" />
       <mapping ext="blad" type="Blade" />
       <mapping pattern="Sentry" type="ECMAScript 6" />
       <mapping pattern="deploy" type="PLAIN_TEXT" />
@@ -10,7 +11,6 @@
       <removed_mapping ext="hphp" approved="true" type="PHP" />
       <removed_mapping pattern="Kernel" approved="true" type="PHP" />
       <removed_mapping pattern="Kernel.php" approved="true" type="PLAIN_TEXT" />
-      <mapping ext="py" type=".env file" />
     </extensionMap>
   </component>
 </application>
